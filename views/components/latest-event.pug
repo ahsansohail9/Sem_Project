@@ -1,0 +1,21 @@
+extends main
+
+block latest-event
+    <section id="about" class="latest-event">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <h2>About The Event</h2>
+                    p #{mainevent.description}
+                </div>
+                <div class="col-lg-3 offset-lg-1">
+                    <h3>Where</h3>
+                    p #{mainevent.location}
+                </div>
+                <div class="col-lg-3">
+                    <h3>When</h3>
+                    p #{mainevent.day} #{mainevent.month} #{mainevent.year}
+                </div>
+            </div>
+        </div>
+    </section>

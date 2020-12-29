@@ -1,0 +1,45 @@
+html
+    head
+        include ./partials/imports
+    
+    body
+        block navbar
+            <header id="header">
+                <div class="container">
+
+                    <div id="logo" class="pull-left">
+                        <a href="/"><img src="./img/favicon-white.png"></a>
+                    </div>
+
+                    <nav id="nav-menu-container">
+                        <ul class="nav-menu">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/it-experts">IT Experts</a></li>
+                            <li><a href="/online-education">Online Education</a></li>
+                            <li><a href="/building-architecture">Building Architecture</a></li>
+                            <li><a href="/career-counselling">Career Counselling</a></li>
+                            <li><a href="/sessions">Sessions</a></li>
+                            <li><a href="/about">About</a></li>
+                            <li><a href="/contact">Contact</a></li>
+                            <li class="buy-tickets"><a href="/reserve-seat">Reserve Seat</a></li>
+                            if !loginuser  
+                                <li><a href="/login" class="nav-btn nav-login">Login</a></li>
+                                <li><a href="/signup" class="nav-btn nnav-signup">Signup</a></li>
+                            if loginuser  
+                                <li><a href="/profile" class="nav-btn nav-profile">Profile</a></li>
+                                <li><a href="/signout" class="nav-btn nav-signout">Signout</a></li>
+                            <a>
+                                if loginuser
+                                    img(src="img/users/"+loginuser.image, alt="Employee Image" class="employee-profile-image")
+                                if !loginuser
+                                    img(src="img/employee-icon.png", alt="Employee Image" class="employee-profile-image")
+                            </a>
+                        </ul>
+                        
+                        include ./components/profile-box
+                        
+                    </nav><!-- #nav-menu-container -->
+                </div>
+            </header>
+        block content
+        include ./components/footer

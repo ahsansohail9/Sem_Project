@@ -1,0 +1,130 @@
+extends sample-page
+
+block append navbar
+    <header id="header">
+        <div class="container">
+
+            <div id="logo" class="pull-left">
+                <a href="/"><img src="./img/favicon-white.png"></a>
+            </div>
+
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/it-experts">IT Experts</a></li>
+                    <li><a href="/online-education">Online Education</a></li>
+                    <li class="menu-active"><a href="/building-architecture">Building Architecture</a></li>
+                    <li><a href="/career-counselling">Career Counselling</a></li>
+                    <li><a href="/sessions">Sessions</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li class="buy-tickets"><a href="/reserve-seat">Reserve Seat</a></li>
+                    if !loginuser  
+                        <li><a href="/login" class="nav-btn nav-login">Login</a></li>
+                        <li><a href="/signup" class="nav-btn nnav-signup">Signup</a></li>
+                    if loginuser  
+                        <li><a href="/profile" class="nav-btn nav-profile">Profile</a></li>
+                        <li><a href="/signout" class="nav-btn nav-signout">Signout</a></li>
+                    <a>
+                        if loginuser
+                            img(src="img/users/"+loginuser.image, alt="Employee Image" class="employee-profile-image")
+                        if !loginuser
+                            img(src="img/employee-icon.png", alt="Employee Image" class="employee-profile-image")
+                    </a>
+                </ul>
+                
+                include ./components/profile-box
+
+            </nav><!-- #nav-menu-container -->
+        </div>
+    </header>
+
+block content
+    <section id="schedule" class="section-with-bg">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <br><br><br><br>
+          <h2>Building Architect Experts</h2>
+          <p>Here are our experts of different categories</p>
+        </div>
+
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" href="#tab-1" role="tab" data-toggle="tab">Residential</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tab-2" role="tab" data-toggle="tab">Commercial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tab-3" role="tab" data-toggle="tab">Interior</a>
+          </li>
+        </ul>
+
+        <div class="tab-content row justify-content-center">
+
+            <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="tab-1">
+                each expert in residential
+                    <div class="row schedule-item">
+                        <div class="col-md-10">
+                            <div class="speaker">
+                                img(src="img/experts/"+expert.image, alt="Expert Image")
+                            </div>
+                            <h4>#{expert.name}<span>( #{expert.qualification} )</span></h4>
+                            <p><strong>Expert in : </strong>#{expert.specialization}</p>
+                        </div>
+                        <div class="col-md-2">
+                            if !loginuser
+                                a(href="/login")
+                                    <button class="consult-button">Consult Now</button>
+                            if loginuser
+                                a(href=expert.contact[0] target="none")
+                                    <button class="consult-button">Consult Now</button>
+                        </div>
+                    </div>
+            </div>
+
+            <div role="tabpanel" class="col-lg-9  tab-pane fade" id="tab-2">
+                each expert in commercial    
+                    <div class="row schedule-item">
+                        <div class="col-md-10">
+                            <div class="speaker">
+                                img(src="img/experts/"+expert.image, alt="Expert Image")
+                            </div>
+                            <h4>#{expert.name}<span>( #{expert.qualification} )</span></h4>
+                            <p><strong>Expert in : </strong>#{expert.specialization}</p>
+                        </div>
+                        <div class="col-md-2">
+                            if !loginuser
+                                a(href="/login")
+                                    <button class="consult-button">Consult Now</button>
+                            if loginuser
+                                a(href=expert.contact[0] target="none")
+                                    <button class="consult-button">Consult Now</button>
+                        </div>
+                    </div>
+            </div>
+
+            <div role="tabpanel" class="col-lg-9  tab-pane fade" id="tab-3">
+                each expert in interior    
+                    <div class="row schedule-item">
+                        <div class="col-md-10">
+                            <div class="speaker">
+                                img(src="img/experts/"+expert.image, alt="Expert Image")
+                            </div>
+                            <h4>#{expert.name}<span>( #{expert.qualification} )</span></h4>
+                            <p><strong>Expert in : </strong>#{expert.specialization}</p>
+                        </div>
+                        <div class="col-md-2">
+                            if !loginuser
+                                a(href="/login")
+                                    <button class="consult-button">Consult Now</button>
+                            if loginuser
+                                a(href=expert.contact[0] target="none")
+                                    <button class="consult-button">Consult Now</button>
+                        </div>
+                    </div>
+            </div>
+     
+        </div>
+      </div>
+    </section>

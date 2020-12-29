@@ -1,0 +1,57 @@
+extends main
+
+block schedule
+    <section id="schedule" class="section-with-bg">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h2>Event Schedule</h2>
+          <p>Here is our event schedule</p>
+        </div>
+
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" href="#current-month" role="tab" data-toggle="tab">#{currentMonth}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#next-month" role="tab" data-toggle="tab">#{nextMonth}</a>
+          </li>
+        </ul>
+
+        <h3 class="sub-heading">Here are our upcoming latest events which are going to be conducted within these two months. Catch us live at the below given locations.
+        <br><br><br>
+        
+        <div class="tab-content row justify-content-center">
+
+          <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="current-month">
+            each event in currentMonthEvents
+              a(href="/"+event._id)  
+                <div class="row schedule-item">
+                  <div class="col-2"><b>#{event.day} #{event.month} #{event.year}</b></div>
+                  <div class="col-10">
+                    <div class="speaker">
+                      img(src="img/events/"+event.image, alt="Event Image")
+                    </div>
+                    <h4>#{event.title} <span>(#{event.expert})</span></h4>
+                    <p><i class="fa fa-map-marker"></i> #{event.location}</p>
+                  </div>
+                </div>
+
+          </div>
+          
+          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="next-month">
+            each event in nextMonthEvents
+              a(href="/"+event._id)  
+                <div class="row schedule-item">
+                  <div class="col-2"><b>#{event.day} #{event.month} #{event.year}</b></div>
+                  <div class="col-10">
+                    <div class="speaker">
+                      img(src="img/events/"+event.image, alt="Event Image")
+                    </div>
+                    <h4>#{event.title}<span>(#{event.expert})</span></h4>
+                    <p><i class="fa fa-map-marker"></i> #{event.location}</p>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </section>

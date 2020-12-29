@@ -1,0 +1,131 @@
+extends sample-page
+
+block content
+    <section class="section-with-bg wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <br><br><br><br><br><br>
+          <h2>IT Experts</h2>
+        </div>
+
+        <div class="row">
+          each itexpert in itExperts
+            <div class="col-lg-4 col-md-6">
+              <div class="hotel">
+                <div class="hotel-img">
+                  img(src="img/experts/"+itexpert.image class="event-image")
+                </div>
+                <h4 class="session-title">
+                  <strong>
+                    | #{itexpert.name}
+                  </strong>
+                </h4>
+                <p class="session-location"></i> #{itexpert.qualification}</p>
+
+                <!--if loginuser-->
+                  <!--if loginuser.role == "admin"-->
+                    a(href="/expert/update/"+itexpert._id)
+                      button(class="btn btn-info" id="session-update-btn") Update
+                    a(href="/expert/delete/"+itexpert._id)
+                      button(class="btn btn-danger" id="session-delete-btn") Delete
+              </div>
+            </div>
+
+        </div>
+      </div>
+      <div class="container">
+        <div class="section-header">
+          <br><br><br>
+          <h2>Online Educators</h2>
+        </div>
+
+        <div class="row">
+          each onlineeducator in onlineEducators
+            <div class="col-lg-4 col-md-6">
+              <div class="hotel">
+                <div class="hotel-img">
+                  img(src="img/experts/"+onlineeducator.image class="event-image")
+                </div>
+                <h4 class="session-title">
+                  <strong>
+                    | #{onlineeducator.name}
+                  </strong>
+                </h4>
+                <p class="session-location"></i> #{onlineeducator.qualification}</p>
+
+                <!--if loginuser-->
+                  <!--if loginuser.role == "admin"-->
+                    a(href="/expert/update/"+onlineeducator._id)
+                      button(class="btn btn-info" id="session-update-btn") Update
+                    a(href="/expert/delete/"+onlineeducator._id)
+                      button(class="btn btn-danger" id="session-delete-btn") Delete
+              </div>
+            </div>
+
+        </div>
+      </div>
+      <div class="container">
+        <div class="section-header">
+          <br><br><br>
+          <h2>Building Architects</h2>
+        </div>
+
+        <div class="row">
+          each buildingarchitect in buildingArchitects
+            <div class="col-lg-4 col-md-6">
+              <div class="hotel">
+                <div class="hotel-img">
+                  img(src="img/experts/"+buildingarchitect.image class="event-image")
+                </div>
+                <h4 class="session-title">
+                  <strong>
+                      | #{buildingarchitect.name}
+                  </strong>
+                </h4>
+                <p class="session-location"></i> #{buildingarchitect.qualification}</p>
+
+                <!--if loginuser-->
+                  <!--if loginuser.role == "admin"-->
+                    a(href="/expert/update/"+buildingarchitect._id)
+                      button(class="btn btn-info" id="session-update-btn") Update
+                    a(href="/expert/delete/"+buildingarchitect._id)
+                      button(class="btn btn-danger" id="session-delete-btn") Delete
+              </div>
+            </div>
+
+        </div>
+      </div>
+      <div class="container">
+        <div class="section-header">
+          <br><br><br>
+          <h2>Career Counsellers</h2>
+        </div>
+
+        <div class="row">
+          each careercounseller in careerCounsellers
+            <div class="col-lg-4 col-md-6">
+              <div class="hotel">
+                <div class="hotel-img">
+                  img(src="img/experts/"+careercounseller.image class="event-image")
+                </div>
+                <h4 class="session-title">
+                  <strong>
+                      | #{careercounseller.name}
+                  </strong>
+                </h4>
+                <p class="session-location"></i> #{careercounseller.qualification}</p>
+
+                <!--if loginuser-->
+                  <!--if loginuser.role == "admin"-->
+                    a(href="/expert/update/"+careercounseller._id)
+                      button(class="btn btn-info" id="session-update-btn") Update
+                    a(href="/expert/delete/"+careercounseller._id)
+                      button(class="btn btn-danger" id="session-delete-btn") Delete
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </section>
+
+    

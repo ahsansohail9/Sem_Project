@@ -1,0 +1,27 @@
+<div id="profile-box">
+    <div class="user-data">
+        if loginuser
+            <h3 id="user-name">
+                b= loginuser.name
+            </h3>
+            <h6 id="user-email">
+                strong= loginuser.email
+            </h6>
+        
+        if !loginuser
+            <h3 id="user-name">
+                b Guest
+            </h3>
+            <h6 id="user-email">
+                strong guest@guest.com
+            </h6>
+    </div>
+    <div id="profile-buttons">
+        if !loginuser
+            <a href="/login"><button class="btn btn-success login-btn">Login</button></a>
+            <a href="/signup"><button class="btn btn-primary signup-btn">Signup</button></a>
+        if loginuser 
+            <a href="/profile"><button class="btn btn-success profile-btn">Profile</button></a>
+            <a href="/signout"><button class="btn btn-warning signout-btn">Sign Out</button></a>
+    </div>
+<div>

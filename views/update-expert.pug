@@ -1,0 +1,69 @@
+extends sample-page
+
+block content
+    
+    <section class="section-bg wow fadeInUp">
+
+        <div class="container">
+
+            <div class="section-header">
+                <br><br><br><br><br>
+                <h2>Update Expert</h2>
+            </div>
+
+            <div class="form">
+    
+                <form method="post" role="form" enctype="multipart/form-data">
+
+                    <div class="form-group col-md-4 offset-md-4">
+                        <label>Name</label>
+                        input(type="text" name="name" class="form-control" id="name" placeholder="Name" required value=expert.name)
+                    </div>
+                    <div class="form-group col-md-4 offset-md-4">
+                        <label>Qualification</label>
+                        input(type="text"  class="form-control" name="qualification" id="qualification" placeholder="Qualification" required value=expert.qualification)
+                    </div>
+                    <div class="form-group col-md-4 offset-md-4">
+                        <label>Expert in</label>
+                    </div>
+                    each expertee in expert.specialization
+                        <div class="form-group col-md-4 offset-md-4">
+                            input(type="text" class="form-control" name="expertee" value=expertee)
+                        </div>
+                                      
+                    <div class="form-group col-md-4 offset-md-4">
+                        <label>Select Expert Type</label>
+                        <select class="form-control" id="add-expert-type" name="type" required>
+                            <option value="">Select Expert Type</option>
+                            <option value="IT-Expert">IT Expert</option>
+                            <option value="Online-Educator">Online Educator</option>
+                            <option value="Building-Architect">Building Architect</option>
+                            <option value="Career-Counseller">Career Counseller</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4 offset-md-4">
+                        <label>Select Category</label>
+                        <select class="form-control" id="add-expert-category" name="category">
+                            <option value="">Select Category</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4 offset-md-4">
+                        <label>Contact</label>
+                    </div>
+                    each cont in expert.contact
+                        <div class="form-group col-md-4 offset-md-4">
+                            input(type="text" class="form-control" name="contact" value=cont)
+                        </div>
+                    <div class="form-group col-md-4 offset-md-4">
+                        <label>Expert Image</label>
+                        <input type="file" name="file" class="form-control" id="image"/>
+                    </div>
+                    
+                    <div class="text-center">
+                        <button type="submit" class="my-btn">Update Expert</button>
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+    </section>

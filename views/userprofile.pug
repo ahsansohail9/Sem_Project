@@ -1,0 +1,47 @@
+extends sample-page
+
+block content
+    <section id="userprofile" class="section-bg wow fadeInUp">
+
+        <div class="container">
+
+            <div class="section-header">
+                <br><br><br><br><br>
+                <h2>Profile</h2>
+                <p>Your credentials</p>
+            </div>
+
+            <div class="form">
+                if loggedInUser
+                    form(action="/profile/"+loggedInUser._id method="post" role="form" enctype="multipart/form-data")
+
+                        <div class="form-group col-md-4 offset-md-4">
+                            <label>Name</label>
+                            input(type="text" name="name" class="form-control" id="name" value=loggedInUser.name)
+                        </div>
+                        <div class="form-group col-md-4 offset-md-4">
+                            <label>Email</label>
+                            input(type="text" name="email" class="form-control" id="email" value=loggedInUser.email)
+                        </div>
+                        <div class="form-group col-md-4 offset-md-4">
+                            <label>Phone</label>
+                            input(type="text" name="phone" class="form-control" id="phone" value=loggedInUser.phone)
+                        </div>
+                        <div class="form-group col-md-4 offset-md-4">
+                            <label>Password</label>
+                            input(type="text" name="password" class="form-control" id="password" placeholder="Enter New Password ( Optional )")
+                        </div>
+                        <div class="form-group col-md-4 offset-md-4">
+                            <label>Image</label>
+                            <input type="file" name="file" class="form-control" id="image" />
+                        </div>
+                        <div class="text-center">  
+                            <button type="submit" class="my-btn" id="signup-btn">Update Profile</button>
+                        </div>
+                    </form>
+
+                if !loggedInUser
+                    h1.text-center Please Login First
+            </div>
+        </div>
+    </section>

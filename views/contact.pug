@@ -1,0 +1,106 @@
+extends sample-page
+
+block append navbar
+    <header id="header">
+        <div class="container">
+
+            <div id="logo" class="pull-left">
+                <a href="/"><img src="./img/favicon-white.png"></a>
+            </div>
+
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/it-experts">IT Experts</a></li>
+                    <li><a href="/online-education">Online Education</a></li>
+                    <li><a href="/building-architecture">Building Architecture</a></li>
+                    <li><a href="/career-counselling">Career Counselling</a></li>
+                    <li><a href="/sessions">Sessions</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li class="menu-active"><a href="/contact">Contact</a></li>
+                    <li class="buy-tickets"><a href="/reserve-seat">Reserve Seat</a></li>
+                    if !loginuser  
+                        <li><a href="/login" class="nav-btn nav-login">Login</a></li>
+                        <li><a href="/signup" class="nav-btn nnav-signup">Signup</a></li>
+                    if loginuser  
+                        <li><a href="/profile" class="nav-btn nav-profile">Profile</a></li>
+                        <li><a href="/signout" class="nav-btn nav-signout">Signout</a></li>
+                    <a>
+                        if loginuser
+                            img(src="img/users/"+loginuser.image, alt="Employee Image" class="employee-profile-image")
+                        if !loginuser
+                            img(src="img/employee-icon.png", alt="Employee Image" class="employee-profile-image")
+                    </a>
+                </ul>
+                
+                include ./components/profile-box
+                
+            </nav><!-- #nav-menu-container -->
+        </div>
+    </header>
+
+block content
+    <section id="contact" class="section-bg wow fadeInUp">
+
+        <div class="container">
+
+            <div class="section-header">
+                <br><br><br>
+                <h2>Contact Us</h2>
+                <p>Feel free to send us your queries</p>
+            </div>
+
+            <div class="row contact-info">
+
+                <div class="col-md-4">
+                    <div class="contact-address">
+                    <i class="ion-ios-location-outline"></i>
+                    <h3>Address</h3>
+                    <address>43-A Paris Road, Sialkot , Pakistan</address>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="contact-phone">
+                    <i class="ion-ios-telephone-outline"></i>
+                    <h3>Phone Number</h3>
+                    <p>+92 340 1234567</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="contact-email">
+                    <i class="ion-ios-email-outline"></i>
+                    <h3>Email</h3>
+                    <p><a href="mailto:info@example.com">queries@e-consultants.com</a></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="form">
+                if successMessage != ""
+                    <div id="contact-success-alert" class="alert alert-success" role="alert">#{successMessage}</div>
+
+                <form action="" method="post" role="form" class="contactForm">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Name" required/>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Email" required/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required/>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="send-message-btn">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>

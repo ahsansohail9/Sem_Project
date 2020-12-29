@@ -1,0 +1,101 @@
+extends sample-page
+
+block content
+    
+    <section class="section-bg wow fadeInUp">
+
+        <div class="container">
+
+            <div class="section-header">
+                <br><br><br><br><br>
+                <h2>Add Session</h2>
+            </div>
+
+            <div class="form">
+    
+                <form method="post" role="form" enctype="multipart/form-data">
+                  
+                    <div class="form-group col-md-4 offset-md-4">
+                        <label>Title</label>
+                        <input type="text" name="title" class="form-control" id="title" placeholder="Title" required/>
+                    </div>
+                    <div class="form-group col-md-4 offset-md-4">
+                        <label>Location</label>
+                        <input type="text" class="form-control" name="location" id="location" placeholder="Location" required/>
+                    </div>
+                    <div class="form-group col-md-4 offset-md-4">
+                        <label>Category</label>
+                        <select class="form-control" id="add-session-category" name="category" required>
+                            <option value="">Select Category</option>
+                            <option value="annual">Annual</option>
+                            <option value="special">Special</option>
+                            <option value="local">Local</option>
+                            <option value="on-demand">On Demand</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4 offset-md-4">
+                        <label>Date</label>
+                    </div>
+                    <div class="form-row form-group">
+                        <div class="form-group col-lg-1 offset-lg-4" id="session-date">
+                            <select class="form-control" id="add-session-month" name="month" required>
+                                <option value="">Month</option>
+                                <option value="Jan">Jan</option>
+                                <option value="Feb">Feb</option>
+                                <option value="Mar">Mar</option>
+                                <option value="Apr">Apr</option>
+                                <option value="May">May</option>
+                                <option value="Jun">Jun</option>
+                                <option value="Jul">Jul</option>
+                                <option value="Aug">Aug</option>
+                                <option value="Sep">Sep</option>
+                                <option value="Oct">Oct</option>
+                                <option value="Nov">Nov</option>
+                                <option value="Dec">Dec</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-lg-1">
+                            <select class="form-control" id="add-session-day" name="day">
+                                <option>Day</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-lg-1">
+                            <select class="form-control" id="add-session-year" name="year" required>
+                                <option value="">Year</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-4 offset-md-4">
+                        <label>Select Session Expert</label>
+                        <select class="form-control" id="add-session-expert" name="expert" required>
+                            <option value="">Select Session Expert</option>
+                            each itexpert in itexperts
+                                option(value=itexpert.name) #{itexpert.name}
+                            each onlineeducator in onlineeducators
+                                option(value=onlineeducator.name) #{onlineeducator.name}
+                            each buildingarchitect in buildingarchitects
+                                option(value=buildingarchitect.name) #{buildingarchitect.name}
+                            each careercounseller in careercounsellers
+                                option(value=careercounseller.name) #{careercounseller.name}
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4 offset-md-4">
+                        <label>Map Link</label>
+                        <input type="text" class="form-control" name="maplink" id="maplink" placeholder="Map Link" required/>
+                    </div>
+                    <div class="form-group col-md-4 offset-md-4">
+                        <label>Session Image</label>
+                        <input type="file" name="file" class="form-control" id="image" required/>
+                    </div>
+                    <div class="form-group col-md-4 offset-md-4">
+                        <label>Session Description</label>
+                        <textarea class="form-control" name="description" rows="5" placeholder="Description" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="my-btn" id="add-session-btn">Add Session</button>
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+    </section>

@@ -1,0 +1,4 @@
+{
+    "db-connection-string": "mongodb://localhost/EConsultants",
+    "jwtPrivateKey": "MyPrivateKey"
+}
