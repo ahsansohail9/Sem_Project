@@ -1,0 +1,92 @@
+[{
+  "_id": {
+    "$oid": "5f3182267f0014409471b76b"
+  },
+  "name": "Asif Shehzad",
+  "qualification": "Ph.D",
+  "specialization": [
+    "HTML",
+    "CSS",
+    "BOOTSTRAP",
+    "REACT"
+  ],
+  "category": "front-end",
+  "contact": [
+    "https://www.linkedin.com/in/asifshahzad/"
+  ],
+  "image": "asifimage.jpg"
+},{
+  "_id": {
+    "$oid": "5f31838390d706757c94469e"
+  },
+  "name": "Usman Akram",
+  "qualification": "Ph.D",
+  "specialization": [
+    "MongoDB",
+    "Express",
+    "REACT",
+    "NodeJS"
+  ],
+  "category": "back-end",
+  "contact": [
+    "https://www.linkedin.com/in/usman-akram-21400327/"
+  ],
+  "image": "usmanimage.jpg"
+},{
+  "_id": {
+    "$oid": "5f3183d490d706757c94469f"
+  },
+  "name": "Adeel Qayyum",
+  "qualification": "MS",
+  "specialization": [
+    "OS",
+    "JAVA",
+    "Web Development",
+    "JavaScript"
+  ],
+  "category": "logic-builder",
+  "contact": [
+    "https://www.linkedin.com/in/adeel-qayyum-5167a27b/"
+  ],
+  "image": "adeelimage.jpg"
+},{
+  "_id": {
+    "$oid": "5f3fab6ac40be9925d436b1f"
+  },
+  "specialization": [
+    "HTML",
+    "CSS",
+    "",
+    ""
+  ],
+  "contact": [
+    "www.linkedin.com/ibtesam7888",
+    "",
+    "",
+    ""
+  ],
+  "image": "file_1598008170789.jpg",
+  "name": "Zain Ali",
+  "qualification": "BS",
+  "category": "front-end"
+},{
+  "_id": {
+    "$oid": "5f3fb659c40be9925d436b26"
+  },
+  "specialization": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "contact": [
+    "www.linkedin.com/ibtesam7888",
+    "",
+    "",
+    ""
+  ],
+  "image": "file_1598010969738.jpg",
+  "name": "Sir Asif",
+  "qualification": "MS",
+  "category": "front-end"
+}]

@@ -1,0 +1,61 @@
+[{
+  "_id": {
+    "$oid": "5f31a35d7f0014409471b770"
+  },
+  "name": "Ahsan",
+  "qualification": "B.S",
+  "specialization": [
+    "House Exterior Architecture"
+  ],
+  "category": "residential",
+  "contact": [
+    "https://www.linkedin.com/in/ahsanch/"
+  ],
+  "image": "ahsanimage.jpg"
+},{
+  "_id": {
+    "$oid": "5f32307290d706757c9446a5"
+  },
+  "name": "Ali",
+  "qualification": "M.S",
+  "specialization": [
+    "Commercial Buildings"
+  ],
+  "category": "commercial",
+  "contact": [
+    "https://www.linkedin.com/in/ali-ali-2533202b/"
+  ],
+  "image": "aliimage.jpg"
+},{
+  "_id": {
+    "$oid": "5f3f7ba5db8f3d8f3957beea"
+  },
+  "specialization": [
+    "House Interior Architecture",
+    "Commercial Interior Architecture"
+  ],
+  "contact": [
+    "https://www.linkedin.com/in/mohsin-maqbool-5a28a91b4/"
+  ],
+  "image": "file_1597995941836.jpg",
+  "name": "Mohsin Updated",
+  "qualification": "M.S",
+  "category": "interior"
+},{
+  "_id": {
+    "$oid": "5f3fac9bc40be9925d436b21"
+  },
+  "specialization": [
+    "House Design"
+  ],
+  "contact": [
+    "www.linkedin.com/ibtesam7888",
+    "",
+    "",
+    ""
+  ],
+  "image": "file_1598008475740.jpg",
+  "name": "Muhammad Javed ",
+  "qualification": "MS",
+  "category": "residential"
+}]

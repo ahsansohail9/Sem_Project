@@ -1,0 +1,94 @@
+[{
+  "_id": {
+    "$oid": "5f3182267f0014409471b76b"
+  },
+  "name": "Asif Shehzad",
+  "qualification": "Ph.D",
+  "specialization": [
+    "HTML",
+    "CSS",
+    "BOOTSTRAP",
+    "REACT"
+  ],
+  "category": "front-end",
+  "contact": [
+    "GTvVlcSKkkLTcMgJhTVRLbdQXCnHCnMMgNfKRGxxqPrfGwnFxJQGwgSNqFlgRvpTGCLbjmkMDTxNq"
+  ],
+  "image": "asifimage.jpg"
+},{
+  "_id": {
+    "$oid": "5f3183d490d706757c94469f"
+  },
+  "name": "Adeel Ahmad",
+  "qualification": "MS",
+  "specialization": [
+    "OS",
+    "JAVA",
+    "Web Development",
+    "JavaScript"
+  ],
+  "category": "logic-builder",
+  "contact": [
+    "DmwnWsLVLDQFCmcKkKcDRnPlLKVLvbjcnQlQLHccgwkRFwRDmPvjNTRfnqRZMLqvHCptNbZXDMFb"
+  ],
+  "image": "adeelimage.jpg"
+},{
+  "_id": {
+    "$oid": "5f31838390d706757c94469e"
+  },
+  "name": "Usman Akram",
+  "qualification": "Ph.D",
+  "specialization": [
+    "MongoDB",
+    "Express",
+    "REACT",
+    "NodeJS"
+  ],
+  "category": "back-end",
+  "contact": [
+    "DmwnWsdKPBcbvCKjvltJTvsFlpkNvFvQqVPGNgbwQNGvlTtHkMzkGCCfhqsDZlBZWhqkVWQBpgnV"
+  ],
+  "image": "usmanimage.jpg"
+},{
+  "_id": {
+    "$oid": "5f31a35d7f0014409471b770"
+  },
+  "name": "Ahsan",
+  "qualification": "B.S",
+  "specialization": [
+    "House Exterior Architecture"
+  ],
+  "category": "residential",
+  "contact": [
+    "ahsan@gmail.com"
+  ],
+  "image": "ahsanimage.jpg"
+},{
+  "_id": {
+    "$oid": "5f31a4537f0014409471b771"
+  },
+  "name": "Qasim Shah",
+  "qualification": "Ph.D",
+  "specialization": [
+    "Career Guider"
+  ],
+  "category": "career-builder",
+  "contact": [
+    "qasim@gmail.com"
+  ],
+  "image": "qasimimage.jpg"
+},{
+  "_id": {
+    "$oid": "5f31a31090d706757c9446a1"
+  },
+  "name": "Arshad",
+  "qualification": "M.A",
+  "specialization": [
+    "English"
+  ],
+  "category": "supplementary",
+  "contact": [
+    "arshad@gmail.com"
+  ],
+  "image": "arshadimage.jpg"
+}]

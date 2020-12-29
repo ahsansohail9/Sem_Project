@@ -1,0 +1,71 @@
+[{
+  "_id": {
+    "$oid": "5f324e9e7f0014409471b772"
+  },
+  "title": "Consulting Mega",
+  "location": "Jinnah Stadium, Sialkot",
+  "category": "annual",
+  "day": "12",
+  "month": "Aug",
+  "year": "2020",
+  "expert": "Asif Shehzad",
+  "maplink": "embed?pb=!1m18!1m12!1m3!1d3364.9470328761054!2d74.5517850145104!3d32.50084480532402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391eeaf30bfa7a15%3A0x6aa0b5d137d16b1c!2sJinnah%20International%20Cricket%20Stadium%20Sialkot!5e0!3m2!1sen!2s!4v1597136245666!5m2!1sen!2s",
+  "image": "event-1.jpg",
+  "description": "The Annual Consulting Event details Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
+},{
+  "_id": {
+    "$oid": "5f324f4190d706757c9446a6"
+  },
+  "title": "CSS Special",
+  "location": "Hilton City Paris Road, Sialkot",
+  "category": "special",
+  "day": "5",
+  "month": "Sep",
+  "year": "2020",
+  "expert": "Qasim Shah",
+  "maplink": "embed?pb=!1m18!1m12!1m3!1d3364.818375736114!2d74.53547551451042!3d32.504283205150095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391eea5babbf0129%3A0x4b6e4554216a5c01!2sThe%20Hilton%20City!5e0!3m2!1sen!2s!4v1597136186855!5m2!1sen!2s",
+  "image": "event-2.jpg",
+  "description": "CSS Event details Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
+},{
+  "_id": {
+    "$oid": "5f324f6890d706757c9446a7"
+  },
+  "title": "ISSB Special Event",
+  "location": "Gulberg-III, Lahore",
+  "category": "local",
+  "day": "7",
+  "month": "Oct",
+  "year": "2021",
+  "expert": "Sandeep",
+  "maplink": "embed?pb=!1m18!1m12!1m3!1d3401.5228056484216!2d74.3388806144826!3d31.509797954818147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919045c800b7a65%3A0x9bfe5a537cfceea4!2sMonal%20Restaurant!5e0!3m2!1sen!2s!4v1597136083562!5m2!1sen!2s",
+  "image": "event-3.jpg",
+  "description": "ISSB Special Event Details Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
+},{
+  "_id": {
+    "$oid": "5f3fad56c40be9925d436b22"
+  },
+  "image": "file_1598008662247.jpg",
+  "title": "Online Learning Session",
+  "location": "Kings Mall Gujranwala",
+  "category": "on-demand",
+  "day": "29",
+  "month": "Aug",
+  "year": "2020",
+  "expert": "Sadiq Nawaz",
+  "maplink": "embed?pb=!1m18!1m12!1m3!1d3379.7809305121355!2d74.1870896144991!3d32.102205925393484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391f2aebdabd0821%3A0xf5a326a706c8fcd!2sSana%20Safinaz!5e0!3m2!1sen!2s!4v1597658780611!5m2!1sen!2s",
+  "description": "Online Learning Session There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary"
+},{
+  "_id": {
+    "$oid": "5f3faf6fc40be9925d436b23"
+  },
+  "image": "file_1598009199812.jpg",
+  "title": "Foreign Studies",
+  "location": "Jinnah Park Sheikhupura",
+  "category": "special",
+  "day": "12",
+  "month": "Sep",
+  "year": "2020",
+  "expert": "Qasim Shah",
+  "maplink": "embed?pb=!1m18!1m12!1m3!1d3394.2322451080154!2d73.97691066448814!3d31.709550294950144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3918c263ba340f5d%3A0x534a429d803d694a!2sJinnah%20Park%2C%20Sheikhupura%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1598008979125!5m2!1sen!2s",
+  "description": "Foreign Studies It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English"
+}]

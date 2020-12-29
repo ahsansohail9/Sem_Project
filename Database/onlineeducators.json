@@ -1,0 +1,75 @@
+[{
+  "_id": {
+    "$oid": "5f31a2167f0014409471b76f"
+  },
+  "name": "Akram",
+  "qualification": "Ph.D",
+  "specialization": [
+    "Physics"
+  ],
+  "category": "primary",
+  "contact": [
+    "https://www.linkedin.com/in/muhammad-jameel-akram-2266a21a5/"
+  ],
+  "image": "akramimage.jpg"
+},{
+  "_id": {
+    "$oid": "5f31a29e90d706757c9446a0"
+  },
+  "name": "Sajjad",
+  "qualification": "Ph.D",
+  "specialization": [
+    "Maths"
+  ],
+  "category": "elementary",
+  "contact": [
+    "https://www.linkedin.com/in/sajjad-ashraf-21911248/"
+  ],
+  "image": "sajjadimage.png"
+},{
+  "_id": {
+    "$oid": "5f31a31090d706757c9446a1"
+  },
+  "name": "Arshad",
+  "qualification": "M.A",
+  "specialization": [
+    "English"
+  ],
+  "category": "supplementary",
+  "contact": "https://www.linkedin.com/in/muhannad-arshad-choudhry-621b7a181/",
+  "image": "arshadimage.jpg"
+},{
+  "_id": {
+    "$oid": "5f31a34790d706757c9446a2"
+  },
+  "name": "Shoaib",
+  "qualification": "M.S",
+  "specialization": [
+    "Computer"
+  ],
+  "category": "intermediate",
+  "contact": [
+    "https://www.linkedin.com/in/shoaib-ahmad-b83a1bb9/"
+  ],
+  "image": "shoaibimage.jpg"
+},{
+  "_id": {
+    "$oid": "5f3fac14c40be9925d436b20"
+  },
+  "specialization": [
+    "Urdu",
+    "",
+    "",
+    ""
+  ],
+  "contact": [
+    "www.linkedin.com/ibtesam7888",
+    "",
+    "",
+    ""
+  ],
+  "image": "file_1598008340470.jpg",
+  "name": "Sadiq Nawaz",
+  "qualification": "BA",
+  "category": "primary"
+}]

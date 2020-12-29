@@ -1,0 +1,78 @@
+[{
+  "_id": {
+    "$oid": "5f3e9d9d21ed207bc9abbf71"
+  },
+  "image": "file_1597939101598.jpg",
+  "role": "admin",
+  "name": "Muhammad Ibtesam Arshad",
+  "email": "miap7888@gmail.com",
+  "phone": 3440669360,
+  "password": "$2a$10$82h/OAF4jLsw2Vf.6KGJRuxTZuHFQRYZ.TFfnhDHjnKbjPMVj74ZS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f3f765765310b90e5f1fc1e"
+  },
+  "image": "file_1597994582724.png",
+  "role": "user",
+  "name": "test",
+  "email": "test@test.com",
+  "phone": 123456789,
+  "password": "$2a$10$ka/xJjM8dvZ62Y3.YvYXuu3dmKqXL6V.AYwuuBK7I5rz98AgRl68.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f3f8131db8f3d8f3957beed"
+  },
+  "image": "file_1597997461787.jpg",
+  "role": "user",
+  "name": "Usman",
+  "email": "usman093@gmail.com",
+  "phone": 6725365367,
+  "password": "$2a$10$ZnjyN63XfLl8D/FYrHzNreoOIQESPuq6z1SV4XzX5nAmwLIFnLd5W",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f3fb247c40be9925d436b24"
+  },
+  "image": "file_1598009927374.jpg",
+  "role": "user",
+  "name": "Ahmad Hassan",
+  "email": "ahmadhassan786@gmail.com",
+  "phone": 3004806078,
+  "password": "$2a$10$VGK3q8VEPYKOqE3CHjGs2O7GhFcu2hGRcISSkEyJrxYR8n8MvNrjq",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f3fb528c40be9925d436b25"
+  },
+  "image": "file_1598010664645.jpg",
+  "role": "user",
+  "name": "Asif Shehzad",
+  "email": "asifshehzad100@gmail.com",
+  "phone": 65426758685,
+  "password": "$2a$10$uMZ0.SO0YL2unNCTpch7Dum95lm3R7QNcwViTe2OReHsSqT3LOf2i",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f437d39c5fcda2d84bcd8f0"
+  },
+  "image": "file_1598258489325.jpg",
+  "role": "user",
+  "name": "Hafiz Waqas",
+  "email": "waqas@gmail.com",
+  "phone": 76856345827,
+  "password": "$2a$10$1AZhruUENqVFyCVHr6SB2.lpEcN6orBIpCWSjbyvNA16h6UINVNt6",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fa2da1ab416b740c0a4fbfa"
+  },
+  "image": "file_1604508186126.jpeg",
+  "role": "user",
+  "name": "taha bhaii",
+  "email": "taha@gmail.com",
+  "phone": 42325435423,
+  "password": "$2a$10$vah1WujeLQnpShbT4yd3RuGGd0bMgwOHgZ0KiuPvmeZXdmjX8ZdnG",
+  "__v": 0
+}]

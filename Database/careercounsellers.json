@@ -1,0 +1,29 @@
+[{
+  "_id": {
+    "$oid": "5f31a4537f0014409471b771"
+  },
+  "name": "Qasim Shah",
+  "qualification": "Ph.D",
+  "specialization": [
+    "Career Guider"
+  ],
+  "category": "career-builder",
+  "contact": [
+    "https://www.linkedin.com/in/qasimalishah/"
+  ],
+  "image": "qasimimage.jpg"
+},{
+  "_id": {
+    "$oid": "5f31a4f590d706757c9446a4"
+  },
+  "name": "Sandeep",
+  "qualification": "M.S",
+  "specialization": [
+    "Motivational Session"
+  ],
+  "category": "motivational-speaker",
+  "contact": [
+    "https://www.linkedin.com/in/sandeep-maheshwari-ba71b1160/"
+  ],
+  "image": "sandeepimage.jpg"
+}]

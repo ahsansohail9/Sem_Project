@@ -1,0 +1,25 @@
+[{
+  "_id": {
+    "$oid": "5f36693348aa42ffd91609df"
+  },
+  "name": "Azam",
+  "email": "azam@gmail.com",
+  "phone": 923441234567,
+  "session": "CSS Special"
+},{
+  "_id": {
+    "$oid": "5f3f805adb8f3d8f3957beec"
+  },
+  "name": "Usman",
+  "email": "usman093@gmail.com",
+  "phone": 98297363436,
+  "session": "CSS Special"
+},{
+  "_id": {
+    "$oid": "5fa2d97ab416b740c0a4fbf9"
+  },
+  "name": "taha bhaii",
+  "email": "taha@gmail.com",
+  "phone": 2334335423,
+  "session": "CSS Special"
+}]
